@@ -3,7 +3,7 @@ import os, time
 
 downloads_path = os.getenv("HOMEPATH") + "\\Downloads"
 logger.log("§rChecking directory '" + str(downloads_path) + "'")
-music_path = os.getenv("HOMEPATH") + "\\\Music"
+music_path = os.getenv("HOMEPATH") + "\\Music"
 for dir in os.listdir(downloads_path):
     if tools.existDirectory(downloads_path + "\\" + dir):
         ok = False
@@ -39,4 +39,3 @@ for dir in os.listdir(downloads_path):
 
 logger.log("§aFinished!")
 time.sleep(3)
-#pyinstaller --onefile --icon=icon.ico main.py

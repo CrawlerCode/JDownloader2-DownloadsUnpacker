@@ -8,3 +8,15 @@ This program:
 - if there is a directory with the same name as the song author, it will be moved i this directory
 
 Icon: https://icons8.com/icon/pack/music/cute-clipart
+
+---
+
+Install
+```bash
+$ pip install -r requirements.txt
+```
+
+Build
+```bash
+$ pyinstaller --onefile --icon=icon.ico main.py
+```
